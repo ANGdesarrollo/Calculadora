@@ -228,6 +228,10 @@ body {
   html {
     font-size: 10px;
   }
+
+  .container-calculadora .container__screen-result span {
+    left: 12px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

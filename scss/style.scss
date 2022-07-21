@@ -257,4 +257,13 @@ body {
   html {
     font-size: 10px;
   }
+  .container-calculadora {
+    .container {
+      &__screen-result {
+        span {
+          left: 12px;
+        }
+      }
+    }
+  }
 }

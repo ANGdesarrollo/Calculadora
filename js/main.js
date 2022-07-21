@@ -83,9 +83,8 @@ numbers.forEach(number => {
         }
         showBig(e.target.value);
         showSmall(e.target.value);
-        console.log(acumulador)
         acumulador += e.target.value;
-        console.log(acumulador)
+
     })
 })
 
@@ -94,6 +93,8 @@ operators.forEach(operators => {
     operators.addEventListener("click", (e) => {
         screenBig.textContent = "";
         showSmall(e.target.value);
+        console.log(numbersArray)
+        console.log(operatorsArray)
         acumulador != "" && numbersArray.push(Number(acumulador));
         operatorsArray.push(e.target.value);
         acumulador = "";
@@ -109,7 +110,6 @@ result.addEventListener("click", () => {
     acumulador = "";
     screenBig.textContent = "";
     operatorsArray.length == 2 && operatorsArray.splice(0, 1);
-    console.log((numbersArray[0] * numbersArray[1]) / 100)
     condicionOperatoria();
 })
 
