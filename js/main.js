@@ -128,23 +128,35 @@ funcionesCientificas.forEach(item => {
             }
             screenSmall.textContent = screenBig.textContent
         } else if (e.target.value === 'Sin') {
-            screenBig.textContent = Math.sin(screenBig.textContent)
-            screenSmall.textContent = screenBig.textContent
+            if(screenBig.textContent != "") {
+                screenBig.textContent = Math.sin(screenBig.textContent)
+                screenSmall.textContent = screenBig.textContent
+            }
         } else if (e.target.value === 'Tan') {
-            screenBig.textContent = Math.tan(screenBig.textContent)
-            screenSmall.textContent = screenBig.textContent
+            if(screenBig.textContent != "") {
+                screenBig.textContent = Math.tan(screenBig.textContent)
+                screenSmall.textContent = screenBig.textContent
+            }
         } else if (e.target.value === "√") {
-            screenBig.textContent = Math.sqrt(screenBig.textContent)
-            screenSmall.textContent = screenBig.textContent
+            if(screenBig.textContent != "") {
+                screenBig.textContent = Math.sqrt(screenBig.textContent)
+                screenSmall.textContent = screenBig.textContent
+            }
         } else if (e.target.value === "∛") {
-            screenBig.textContent = Math.cbrt(screenBig.textContent)
-            screenSmall.textContent = screenBig.textContent
+            if(screenBig.textContent != "") {
+                screenBig.textContent = Math.cbrt(screenBig.textContent)
+                screenSmall.textContent = screenBig.textContent
+            }
         } else if (e.target.value === "x2") {
-            screenBig.textContent = Math.pow(screenBig.textContent, 2)
-            screenSmall.textContent = screenBig.textContent
+            if(screenBig.textContent != "") {
+                screenBig.textContent = Math.pow(screenBig.textContent, 2)
+                screenSmall.textContent = screenBig.textContent
+            }
         } else if (e.target.value === "x3") {
-            screenBig.textContent = Math.pow(screenBig.textContent, 3)
-            screenSmall.textContent = screenBig.textContent
+            if(screenBig.textContent != "") {
+                screenBig.textContent = Math.pow(screenBig.textContent, 3)
+                screenSmall.textContent = screenBig.textContent
+            }
         }
 
     })
